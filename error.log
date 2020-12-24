@@ -1,0 +1,156 @@
+2020-12-25 00:27:55,380 - ERROR - weibo.py[:1075] - [Errno 13] Permission denied: 'C:\\Users\\flottant\\Documents\\GitHub\\weibo-crawler\\weibo\\users.csv'
+Traceback (most recent call last):
+  File "weibo.py", line 1043, in get_pages
+    self.get_user_info()
+  File "weibo.py", line 274, in get_user_info
+    self.user_to_database()
+  File "weibo.py", line 220, in user_to_database
+    self.user_to_csv()
+  File "weibo.py", line 167, in user_to_csv
+    self.csv_helper(result_headers, result_data, file_path)
+  File "weibo.py", line 791, in csv_helper
+    with open(file_path, 'a', encoding='utf-8-sig', newline='') as f:
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\flottant\\Documents\\GitHub\\weibo-crawler\\weibo\\users.csv'
+2020-12-25 00:32:57,858 - ERROR - weibo.py[:1075] - strftime() argument 1 must be str, not builtin_function_or_method
+Traceback (most recent call last):
+  File "weibo.py", line 1043, in get_pages
+    self.get_user_info()
+  File "weibo.py", line 274, in get_user_info
+    self.user_to_database()
+  File "weibo.py", line 220, in user_to_database
+    self.user_to_csv()
+  File "weibo.py", line 167, in user_to_csv
+    self.csv_helper(result_headers, result_data, file_path)
+  File "weibo.py", line 795, in csv_helper
+    writer.writerows( datetime.now().strftime((format)))
+TypeError: strftime() argument 1 must be str, not builtin_function_or_method
+2020-12-25 00:33:34,065 - ERROR - weibo.py[:1075] - strftime() argument 1 must be str, not builtin_function_or_method
+Traceback (most recent call last):
+  File "weibo.py", line 1043, in get_pages
+    self.get_user_info()
+  File "weibo.py", line 274, in get_user_info
+    self.user_to_database()
+  File "weibo.py", line 220, in user_to_database
+    self.user_to_csv()
+  File "weibo.py", line 167, in user_to_csv
+    self.csv_helper(result_headers, result_data, file_path)
+  File "weibo.py", line 795, in csv_helper
+    writer.writerows( datetime.now().strftime(format))
+TypeError: strftime() argument 1 must be str, not builtin_function_or_method
+2020-12-25 00:36:53,076 - ERROR - weibo.py[:1075] - strftime() argument 1 must be str, not builtin_function_or_method
+Traceback (most recent call last):
+  File "weibo.py", line 1043, in get_pages
+    self.get_user_info()
+  File "weibo.py", line 274, in get_user_info
+    self.user_to_database()
+  File "weibo.py", line 220, in user_to_database
+    self.user_to_csv()
+  File "weibo.py", line 167, in user_to_csv
+    self.csv_helper(result_headers, result_data, file_path)
+  File "weibo.py", line 795, in csv_helper
+    writer.writerows(datetime.now().strftime(format))
+TypeError: strftime() argument 1 must be str, not builtin_function_or_method
+2020-12-25 00:39:23,043 - ERROR - weibo.py[:1075] - strptime() takes exactly 2 arguments (1 given)
+Traceback (most recent call last):
+  File "weibo.py", line 1043, in get_pages
+    self.get_user_info()
+  File "weibo.py", line 274, in get_user_info
+    self.user_to_database()
+  File "weibo.py", line 220, in user_to_database
+    self.user_to_csv()
+  File "weibo.py", line 167, in user_to_csv
+    self.csv_helper(result_headers, result_data, file_path)
+  File "weibo.py", line 795, in csv_helper
+    writer.writerows(datetime.now().strptime("%Y-%m-%d %H:%M:%S"))
+TypeError: strptime() takes exactly 2 arguments (1 given)
+2020-12-25 00:43:00,178 - ERROR - weibo.py[:1076] - local variable 'sys' referenced before assignment
+Traceback (most recent call last):
+  File "weibo.py", line 1044, in get_pages
+    self.get_user_info()
+  File "weibo.py", line 274, in get_user_info
+    self.user_to_database()
+  File "weibo.py", line 220, in user_to_database
+    self.user_to_csv()
+  File "weibo.py", line 167, in user_to_csv
+    self.csv_helper(result_headers, result_data, file_path)
+  File "weibo.py", line 782, in csv_helper
+    if sys.version < '3':  # python2.x
+UnboundLocalError: local variable 'sys' referenced before assignment
+2020-12-25 00:48:06,311 - ERROR - weibo.py[:1076] - '_csv.writer' object is not callable
+Traceback (most recent call last):
+  File "weibo.py", line 1044, in get_pages
+    self.get_user_info()
+  File "weibo.py", line 274, in get_user_info
+    self.user_to_database()
+  File "weibo.py", line 220, in user_to_database
+    self.user_to_csv()
+  File "weibo.py", line 167, in user_to_csv
+    self.csv_helper(result_headers, result_data, file_path)
+  File "weibo.py", line 796, in csv_helper
+    writer(systf)
+TypeError: '_csv.writer' object is not callable
+2020-12-25 00:48:22,498 - ERROR - weibo.py[:1076] - '_csv.writer' object has no attribute 'write'
+Traceback (most recent call last):
+  File "weibo.py", line 1044, in get_pages
+    self.get_user_info()
+  File "weibo.py", line 274, in get_user_info
+    self.user_to_database()
+  File "weibo.py", line 220, in user_to_database
+    self.user_to_csv()
+  File "weibo.py", line 167, in user_to_csv
+    self.csv_helper(result_headers, result_data, file_path)
+  File "weibo.py", line 796, in csv_helper
+    writer.write(systf)
+AttributeError: '_csv.writer' object has no attribute 'write'
+2020-12-25 00:53:34,165 - ERROR - weibo.py[:1076] - 'builtin_function_or_method' object has no attribute 'time'
+Traceback (most recent call last):
+  File "weibo.py", line 1044, in get_pages
+    self.get_user_info()
+  File "weibo.py", line 274, in get_user_info
+    self.user_to_database()
+  File "weibo.py", line 220, in user_to_database
+    self.user_to_csv()
+  File "weibo.py", line 167, in user_to_csv
+    self.csv_helper(result_headers, result_data, file_path)
+  File "weibo.py", line 791, in csv_helper
+    systf = time.time()
+AttributeError: 'builtin_function_or_method' object has no attribute 'time'
+2020-12-25 00:54:18,213 - ERROR - weibo.py[:1076] - 'builtin_function_or_method' object has no attribute 'time'
+Traceback (most recent call last):
+  File "weibo.py", line 1044, in get_pages
+    self.get_user_info()
+  File "weibo.py", line 274, in get_user_info
+    self.user_to_database()
+  File "weibo.py", line 220, in user_to_database
+    self.user_to_csv()
+  File "weibo.py", line 167, in user_to_csv
+    self.csv_helper(result_headers, result_data, file_path)
+  File "weibo.py", line 791, in csv_helper
+    systf = int(round(time.time() * 1000))
+AttributeError: 'builtin_function_or_method' object has no attribute 'time'
+2020-12-25 00:54:50,824 - ERROR - weibo.py[:1077] - iterable expected, not int
+Traceback (most recent call last):
+  File "weibo.py", line 1045, in get_pages
+    self.get_user_info()
+  File "weibo.py", line 275, in get_user_info
+    self.user_to_database()
+  File "weibo.py", line 221, in user_to_database
+    self.user_to_csv()
+  File "weibo.py", line 168, in user_to_csv
+    self.csv_helper(result_headers, result_data, file_path)
+  File "weibo.py", line 797, in csv_helper
+    writer.writerow(systf)
+_csv.Error: iterable expected, not int
+2020-12-25 00:55:06,422 - ERROR - weibo.py[:1077] - iterable expected, not int
+Traceback (most recent call last):
+  File "weibo.py", line 1045, in get_pages
+    self.get_user_info()
+  File "weibo.py", line 275, in get_user_info
+    self.user_to_database()
+  File "weibo.py", line 221, in user_to_database
+    self.user_to_csv()
+  File "weibo.py", line 168, in user_to_csv
+    self.csv_helper(result_headers, result_data, file_path)
+  File "weibo.py", line 797, in csv_helper
+    writer.writerow(systf)
+_csv.Error: iterable expected, not int

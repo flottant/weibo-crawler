@@ -785,12 +785,16 @@ class Weibo(object):
                 writer = csv.writer(f)
                 if is_first_write:
                     writer.writerows([headers])
+                writer.writerows( datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
                 writer.writerows(result_data)
         else:  # python3.x
+            systf = (datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+            d1 = [systf]
             with open(file_path, 'a', encoding='utf-8-sig', newline='') as f:
                 writer = csv.writer(f)
                 if is_first_write:
                     writer.writerows([headers])
+                writer.writerow(d1)
                 writer.writerows(result_data)
         if headers[0] == 'id':
             logger.info(u'%d条微博写入csv文件完毕,保存路径:', self.got_count)
